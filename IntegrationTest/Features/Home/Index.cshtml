@@ -1,0 +1,113 @@
+﻿<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+	
+    <title>Test</title>
+			
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="/Content/angular-material.min.css">
+</head>
+<body ng-controller="MainController" ng-app="IntegrationTest" ng-cloak>
+<!--
+Your HTML content here
+-->  
+	
+<style>
+    md-toolbar {
+        padding: 0 10px 0 10px;
+    }
+		
+    md-card {
+        height: 300px;
+    }
+		
+    md-card-title {
+        max-height: 30px;
+    }
+		
+    .layoutWrap {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+		
+    .showMoreEventsContent {
+        height: 100%; 
+        position: relative;
+    }
+		
+    .showMoreEventsText {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); 
+        width: 100%; 
+        margin-left: -16px; 
+        text-align: center;
+    }
+		
+    .showMoreEventsCard {
+        background-color: transparent;
+        cursor: pointer;
+    }
+		
+    .eventData {
+        margin-bottom: 5px;
+    }
+    .eventDate {
+        font-weight: bold;
+    }
+		
+    .eventTitle {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        display: inline-block; 
+        text-decoration: none;
+    }
+		
+    .eventTitle:hover {
+        text-decoration: underline;
+    }
+		
+    md-progress-circular {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        left: 45%;
+    }
+</style>
+	
+<md-content>
+    <h1 md-colors="{color: 'primary-700'}" class="md-headline">Home Page</h1>
+		
+    <div ng-controller="HomeController">
+		
+        <div flex layout="row" class="layoutWrap">
+        </div>
+		
+    </div>
+		
+</md-content>
+
+<script src="/Scripts/angular.min.js"></script>
+<script src="/Scripts/angular-animate.min.js"></script>
+<script src="/Scripts/angular-aria.min.js"></script>
+	
+<script src="/Scripts/angular-material.min.js"></script>
+
+<!-- Core App Files -->
+<script src="/Scripts/app/core/app.module.js"></script>
+<script src="/Scripts/app/core/app.theme.config.js"></script>
+	
+<!-- Services -->
+<script src="/Scripts/app/core/services/trello.service.js"></script>
+	
+<!-- Pages -->
+<script src="/Scripts/app/controllers/home.controller.js"></script>
+	
+</body>
+</html>
